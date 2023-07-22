@@ -52,7 +52,7 @@
     const AS_URL_BASE = "https://script.google.com/macros/s/AKfycbw6QmnzlALTJLedIiFHd88IKCG28ZCBhOJO_4-gDyyW/dev";
     
     let url = document.location.href;
-    let id = url.substr(url.lastIndexOf("id=")+2);
+    let id = url.substr(url.lastIndexOf("id")+2);
     
     if(id){
       fetch(AS_URL_BASE+'?id='+id)

@@ -55,7 +55,7 @@
     let id = url.substr(url.lastIndexOf("id")+2);
     
     if(id){
-      fetch(AS_URL_BASE+'?id='+id)
+      fetch(AS_URL_BASE+'?id'+id)
       .then(r => r.text())
       .then((r) => {
         console.log(r);
